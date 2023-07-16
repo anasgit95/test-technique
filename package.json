@@ -1,0 +1,16 @@
+{
+  "name": "test-tech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd frontendProject && npm start\" \"cd backend && npm start\"",
+    "install:project": "cd backend && npm i && cd ../frontendProject && npm i",
+    "test": "cd backend && npx jest "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.3"
+  }
+}
